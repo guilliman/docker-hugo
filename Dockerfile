@@ -1,7 +1,7 @@
-FROM debian:wheezy
-MAINTAINER yigal@publysher.nl
+FROM debian:jessie
+MAINTAINER digweed@mail.ua
 
-# Install pygments (for syntax highlighting) 
+# Install pygments (for syntax highlighting)
 RUN apt-get -qq update \
 	&& DEBIAN_FRONTEND=noninteractive apt-get -qq install -y --no-install-recommends python-pygments \
 	&& rm -rf /var/lib/apt/lists/*
